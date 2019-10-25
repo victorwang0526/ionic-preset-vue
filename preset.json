@@ -2,10 +2,6 @@
   "useConfigFiles": true,
   "plugins": {
     "@vue/cli-plugin-babel": {},
-    "@vue/cli-plugin-typescript": {
-      "classComponent": true,
-      "useTsWithBabel": true
-    },
     "@vue/cli-plugin-router": {
       "historyMode": true
     },
@@ -15,5 +11,6 @@
         "save"
       ]
     }
-  }
+  },
+  "cssPreprocessor": "dart-sass"
 }
