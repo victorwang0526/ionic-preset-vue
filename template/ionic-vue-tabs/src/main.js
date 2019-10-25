@@ -1,11 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-
-import IonicVue from '@ionic/vue';
-import '@ionic/core/css/core.css';
+import Ionic from '@ionic/vue';
 import '@ionic/core/css/ionic.bundle.css';
-import { defineCustomElements } from '@ionic/pwa-elements/loader'; // add this line
+import { defineCustomElements } from '@ionic/pwa-elements/loader';
 
 import { addIcons } from "ionicons";
 import { construct, home } from "ionicons/icons";
@@ -17,12 +15,10 @@ addIcons({
   "md-home": home.md,
 });
 
-
-Vue.use(IonicVue);
-
+Vue.use(Ionic);
 Vue.config.productionTip = false
-Vue.config.ignoredElements = [/^ion-/]
-defineCustomElements(window);  // add this line
+Vue.config.ignoredElements = [/^ion-/];
+defineCustomElements(window);
 
 new Vue({
   router,
