@@ -15,12 +15,6 @@ module.exports = (api, options, rootOptions) => {
         }
     });
 
-    if (options.template === 'ionic-vue') {
-        console.log('choose ionic-vue')
-    } else if (options.template === 'ionic-vue-tabs') {
-        console.log('choose ionic-vue-tabs')
-    }
-
     // 配置文件
     api.render({
         './capacitor.config.json' : './template/capacitor.config.json',
@@ -28,7 +22,6 @@ module.exports = (api, options, rootOptions) => {
     });
 
     if (options.template === 'ionic-vue' || options.template === 'ionic-vue-tabs') {
-        console.log('choose ionic-vue')
         // 复制并用 ejs 渲染 `./template` 内所有的文件
         api.render('./template/ionic-vue')
 
