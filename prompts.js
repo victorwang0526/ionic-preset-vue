@@ -23,6 +23,10 @@ module.exports = [
             {
                 name: 'ionic-vue-tabs',
                 value: 'ionic-vue-tabs'
+            },
+            {
+                name: 'ionic-vue-tabs-vux',
+                value: 'ionic-vue-tabs-vux'
             }
         ],
         default: 'None'
